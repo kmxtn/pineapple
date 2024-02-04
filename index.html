@@ -8,12 +8,16 @@
     justify-content: center
   }
 
-  .text {
-    font-size: 14px;
-  }
+  input, textarea {font-family: Verdana, Geneva, Tahoma, sans-serifp; font-size: 12px; resize: none}
 
   textarea::placeholder {
-    font-size: 14px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  input::placeholder {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
   }
 
   .button1 {
@@ -40,6 +44,16 @@
   .button2:hover {
     background-color: #f67ca0;
   }
+
+  .p {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  ul, a {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
 </style>
 
 <head>
@@ -48,7 +62,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pineapple</title>
     <script type="text/javascript" src="script.js"></script>  
-    <script src="https://kit.fontawesome.com/a42a62f98b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,11 +71,11 @@
     </div>
     <br>
     <div class="container">
-      <input type="text" id="itemName" placeholder="Enter item name">
+      <input type="text" id="itemName" placeholder="Enter item name" maxlength="30" size="20" required>
     </div>
     <br>
     <div class="container">  
-      <textarea name="text" id="itemNotes" placeholder="Notes"></textarea>
+      <textarea name="text" id="itemNotes" placeholder="Notes" maxlength="100" cols="20" rows="5"></textarea>
     </div>
     <br>
     <div class="container">
